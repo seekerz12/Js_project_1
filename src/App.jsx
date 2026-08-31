@@ -10,7 +10,7 @@ function App() {
   const [categories, setCategories] = useLocalStorage('kanban-categories', ['Development', 'Design', 'Marketing']);
 
   return (
-    <Router>
+    <Router basename="/Js_project_1">
       <div className="min-h-screen p-6 font-sans">
         <nav className="flex justify-between items-center mb-8 p-4 bg-glass border border-glassBorder rounded-2xl backdrop-blur-md">
           <h1 className="text-2xl font-bold bg-gradient-to-r from-teal-400 to-violet-500 text-transparent bg-clip-text">
