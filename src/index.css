@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  /* Swapped soft glass for aggressive black panels with stark white borders */
+  --color-glass: rgba(0, 0, 0, 0.85);
+  --color-glassBorder: #ffffff;
+}
+
+body {
+  /* High contrast text and selection colors */
+  @apply text-white min-h-screen selection:bg-white selection:text-black;
+  
+  /* Signature Persona 5 vibrant red base */
+  background-color: #000000; 
+  
+  /* Comic-book style halftone dot pattern */
+  background-image: 
+    radial-gradient(#111111 12%, transparent 13%), 
+    radial-gradient(#111111 12%, transparent 13%);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
